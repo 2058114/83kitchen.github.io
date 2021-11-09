@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+/* 変な余白を無くす */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 参考：https://snownotes.org/fixing-header/ */
+header{
+    height:50px;
+    background-color:white;
+    /* 上に固定 */
+    position: fixed;
+    width: 100%;
+    z-index:1;
+}
+
+
+
+  
+  
+.logo{
+    /* float: left;によって<logo>要素と<list-menu>要素が横並びになる */
+
+    float:left;
+}
+  
+.logo img{
+  /* 　logoのサイズ */
+    width:120px;
+    margin: 40px;
+
+
+}
+  
+  
+
+
+nav
+{
+    text-align: center;
+    margin: 10px;
+}
+nav ul
+{
+    margin: 0 ;
+    padding: 0 ;
+}
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    width: 18%;
+    min-width: 80px;
+}    
+nav ul li a
+{
+    text-decoration: none;
+    color: #333;
+}
+nav ul li.current a
+{
+    color: #F33135;
+}
+nav ul li a:hover
+{
+    color: #E7DA66;
+}
+
+/* h1 */
+/* { */
+    /* font-size: 32px; */
+    /* 背景色を指定するプロパティ */
+    /* background-color:#20b2aa; */
+    /* background-size: 100%; */
+    /* color: #ffffff; */
+
+/* } */
+
+
+
+body
+{
+    font-size: 20px;
+
+    /* フォントの種類を指定するプロパティ */
+    font-family: serif;
+
+    /* 背景色を指定するプロパティ */
+    background-color:#ffffff;
+
+    /* 文字の色を変更するプロパティ */
+    color: #000000;
+
+    /* 行の高さを指定するプロパティ */
+    /* 単位は　px, em, rem, % */
+    line-height: 2em;
+    /* text-align: center; */
+
+}
+
+
+
+
+
+
+
+
+
+h3
+{
+    /* テキストの行揃えを指定するプロパティ */
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+.js-animation {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(90px);
+    transition: all 1s;
+}
+.js-animation.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(50px);
+}
+
+
+
+
+
+
+
+
+/* ボタン */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-border {
+    border: 2px solid #000;
+    border-radius: 0;
+    background: #fff;
+}
+  
+a.btn-border:hover {
+    color: #fff;
+    background: #000;
+}
+
+#morning{
+    margin: 60px;
+}
+
+#lunch{
+    margin: 60px;
+}
+
+#dinner{
+    margin: 60px;
+}
+
+#dessert{
+    margin: 60px;
+}
+
+#drink{
+    margin: 60px;
+}
+
+#alcohol{
+    margin: 60px;
+}
+
+.menu{
+
+    text-align: center;
+
+}
+
+.menuhyou{
+    text-align: center;
+}
+
+.yohaku{
+    margin-bottom: 80px;
+    background-color: white;
+}
+
+.small-yohaku{
+    margin-bottom: 10px;
+}
+
+.hyou{
+
+    margin-left: 35%;
+}
+
+.center{
+    text-align: center;
+}
+
+.dinner{
+    text-align: center;
+    font-size: 20px !important;
+}
+
+.drink{
+    text-align: center;
+}
+
+
+
+/* card */
+#cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 35%;
+    height: 35%;
+    border: 1px solid lightgray;
+}
+
+.card:nth-child(2) {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.picture img {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.description {
+    width: 100%;
+    height: 15%;
+    padding-right: 5%;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+
+.description p {
+    font-size: 20px;
+    color: dimgray;
+    text-align: center;
+}
+
+
+.hh2{
+    position: relative;
+    padding: 0.5em;
+    background: #a6d3c8;
+    color: white;
+}
+  
+.hh2::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 15px transparent;
+    border-right: solid 20px rgb(149, 158, 155);
+}
+
+h2{
+    color: #494949;/*文字色*/
+
+    /*線の種類（二重線）太さ 色*/
+    border-bottom: double 5px #a6d3c8;
+}
+
+.osirase {
+    background-color: #d3d3d3;
+    border: solid 3px ;/*線色*/
+    padding: 0.5em;/*文字周りの余白*/
+    border-radius: 0.5em;/*角丸*/
+    text-align: center;
+    margin: 120px;
+
+
+}
+
+h4{
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #a6d3c8;/*左線*/
+
+      /*線の種類（実線） 太さ 色*/
+    border-bottom: solid 3px #d3d3d3;
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.insta_btn {
+    display: inline-block;
+    text-align: center;/*中央揃え*/
+    color: #2e6ca5;/*文字色*/
+    font-size: 20px;/*文字サイズ*/
+    text-decoration: none;/*下線消す*/
+  }
+  
+  .insta_btn:hover {/*ホバー時*/
+    color:#668ad8;/*文字色*/
+    transition: .5s;/*ゆっくり変化*/
+  }
+  
+  .insta_btn .insta{/*アイコンの背景*/
+    position: relative;/*相対配置*/
+    display: inline-block;
+    width: 50px;/*幅*/
+    height: 50px;/*高さ*/
+    background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+    overflow: hidden;/*はみ出た部分を隠す*/
+    border-radius: 13px;/*角丸に*/
+  
+  }
+  
+  .insta_btn .insta:before{/*グラデーションを重ねるため*/
+    content: '';
+    position: absolute;/*絶対配置*/
+    top: 23px;/*ずらす*/
+    left: -18px;/*ずらす*/
+    width: 60px;/*グラデーションカバーの幅*/
+    height: 60px;/*グラデーションカバーの高さ*/
+    background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+    background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+  }
+  
+  .insta_btn .fa-instagram {/*アイコン*/
+    color: #FFF;/*白に*/
+    position: relative;/*z-indexを使うため*/
+    z-index: 2;/*グラデーションより前に*/
+    font-size: 35px;/*アイコンサイズ*/
+    line-height: 50px;/*高さと合わせる*/
+  }
